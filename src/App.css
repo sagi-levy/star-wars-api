@@ -1,0 +1,94 @@
+.flexbox-container {
+  display: flex;
+  border: 2px solid #2f6f97;
+  border-radius: 10%;
+}
+.flexbox-item {
+  border: salmon;
+}
+
+.flexbox-table {
+  flex: 1;
+}
+.flexbox-item-2 {
+  flex: 2;
+}
+
+.styled-button {
+  display: inline-block;
+  padding: 3px 4px;
+  font-size: 16px;
+  background-color: #5196c4;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.styled-button:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .flexbox-container {
+    flex-direction: column;
+  }
+  .card {
+    margin: auto !important;
+  }
+
+  .flexbox-table,
+  .flexbox-item-2 {
+    width: 100%;
+  }
+}
+
+.card {
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.card-header {
+  background-color: #3498db;
+  color: #fff;
+  height: 20px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-header h1 {
+  font-size: 100%;
+  margin: 5px;
+}
+.card-body {
+  padding: 50px;
+}
+
+.toc-wrapper {
+  background: #fff;
+  box-shadow: 0 3px 30px #3b8abb;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 50px;
+}
+.toc-header {
+  background: rgb(107, 188, 202);
+  border-radius: 50px 0px 0 100px;
+  min-height: 100px;
+}
+
+.toc-list-item h3 {
+  transition: 22 ease;
+  position: relative;
+
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25em;
+  display: block;
+  padding: 10px 0px 0px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
